@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Big-O Notation Primer</title>
-</head>
-<body>
-    <h1>Big-O Notation Primer</h1>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Big-O Notation Primer</title>
+	</head>
+	<body>
+		<h1>Big-O Notation Primer</h1>
+		<p>
+			The Big-O notation measures the worst-case complexity of an algorithm. In
+			Big-O notation, n represents the number of inputs. The question asked with
+			Big-O is the following: “What will happen as n approaches infinity?” When
+			you implement an algorithm, Big-O notation is important because it tells
+			you how efficient the algorithm is. Figure 1-1 shows some common Big-O
+			notations.
+		</p>
+		<img
+			src="Big-O-Notation.png"
+			alt="" />
+		<p>
+			The following sections illustrate these common time complexities with some
+			simple examples.
+		</p>
+		<h4>Common Examples</h4>
+		<p>
+			O(1) does not change with respect to input space. Hence, O(1) is referred
+			to as being constant time. An example of an O(1) algorithm is accessing an
+			item in the array by its index. O(n) is linear time and applies to
+			algorithms that must do n operations in the worst-case scenario.
+		</p>
+		<p>
+			An example of an O(n) algorithm is printing numbers from 0 to n-1, as
+			shown here:
+		</p>
+
+		<script>
+			function exampleLinear(n) {
+				for (var i = 0; i < n; i++) {
+					console.log(i);
+				}
+			}
+			// exampleLinear(5);
+
+			function exampleQuadratic(n) {
+				for (var i = 0; i < n; i++) {
+					console.log(i);
+					for (var j = i; j < n; j++) {
+						console.log(j);
+					}
+				}
+			}
+
+			// exampleQuadratic(5);
+		</script>
+	</body>
 </html>
