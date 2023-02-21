@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Scope</title>
+</head>
+<body>
+    <script>
+        // * example One
+        // function scope1(){
+        //     var top = "top";
+        //     bottom = "hello this is the function scope";
+        //     hello = "Hello Variablle without var keyword"
+        //     console.log(bottom);
+        //     console.log(hello);
+
+        // }
+        // scope1();
+
+        // example two
+        function scope2(){
+            var top = "top";
+            var bottom;
+            bottom = "hello this is the function scope example two";
+            console.log(bottom);
+
+        }
+        scope2();
+
+        // example three
+
+        // function scope3(print){
+        //     if(print){
+        //         var insideIf = "29"
+        //     }
+        //     console.log(insideIf);
+        // }
+        // scope3(true);
+
+        // example four
+
+        // function scope4(print){
+        //     var insideIf;
+        //     if(print){
+        //         var insideIf = "29";
+        //     }
+        //     console.log(insideIf);
+        // }
+        // scope4(false);
+
+    </script>
+</body>
+</html>
